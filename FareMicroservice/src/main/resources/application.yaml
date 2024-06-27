@@ -1,0 +1,17 @@
+spring:
+ data:
+  mongodb:
+   uri: mongodb://localhost:27017/Fare
+ application:
+  name: fare
+     
+server:
+ port: 8001
+ 
+eureka:
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8761/eureka
+ instance:
+    prefer-ip-address: true
+    hostname: fare
